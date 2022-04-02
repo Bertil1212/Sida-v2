@@ -1,0 +1,1 @@
+1 means that the cell is yet to be bought. 0 means that it is sold

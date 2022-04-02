@@ -1,0 +1,218 @@
+:root{
+    --bg-colour: rgb(94, 176, 253);
+    --swish-colour: rgb(39, 75, 109);
+    --usedbutton-colour: rgba(71, 73, 219, 0.596);
+    --unusedbutton-colour: rgb(206, 206, 206);
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+#cont{
+    background-color: var(--bg-colour);
+    height: 100%;
+    min-height: 100%;
+}
+
+#bodyrow{
+    background-color: var(--bg-colour);
+}
+
+
+#titlerow{
+    background-color: var(--bg-colour);
+}
+
+
+.titleimg{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+
+
+#carimg{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+.imgwrap{
+    width: 100%;
+    
+    position: relative;
+}
+.buttonwrap{
+    width: 100%;
+    padding-left: 0.8%;
+    
+}
+
+#buttoncon{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 4.5%; 
+    height: 91%;
+    
+    width:57vmax
+    
+    
+}
+.buttonrow{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.buttonrow{
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+.solarbuttons{
+    padding: 0px;
+    border-radius: 7px;
+    border-color: rgb(95, 194, 255);
+    background-color: var(--unusedbutton-colour);
+    font-size: 1.2vw;
+    font-weight:600;
+}
+
+.nobutton{
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.solarbuttons,.nobutton{
+    padding: 0px;
+    margin: 1px;
+    height: 2.4vw;
+    width: 5vw;
+
+}
+
+
+
+#bottomrow{
+    background-color: var(--bg-colour);
+    height: 100vh;
+    min-height: 100vh;
+}
+
+
+
+
+
+#popupcon{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    top: 220px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+
+}
+
+#popuprow{
+    height: 370px;
+    width: 100%;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#popupcol{
+    border: steelblue;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 40px; 
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: var(--swish-colour);
+}
+
+#swishl{
+   
+    width: 65%;
+}
+#swishr{
+    
+    width: 35%;
+}
+
+#backbutton{
+    width: 60px;
+    height: 60px;
+    margin-left: -3px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#qrcode{
+    margin-left: 33px;
+    margin-top: 20px;
+    width: 80%;
+}
+#acceptbutton{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#cellnummber{
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 130px;
+}
+#swishtxt{
+    margin-top: -60px;
+    margin-left: 120px;
+    color: white;
+    font-size: 40px;
+}
+
+.adminbutton{
+    position: fixed;
+    height: 150px;
+    width: 250px;
+    background-color: transparent;
+    border: none;
+}
+
+
+#admin2{
+    left: 380px;
+    
+}
+#admin3{
+    right: 0px;
+    
+}
+
+

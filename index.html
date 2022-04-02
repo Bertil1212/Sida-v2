@@ -81,10 +81,12 @@
                         if(buttonclicked.classList.contains("used")){
                             /*if already sold*/
                             buttonclicked.classList.remove("used");
-                            location.href='adminsell.php?id=' + clicked_id;
+                            fetch('https://andreasb.one/HUST/adminsell.php?id=' + clicked_id);
+                            //window.location.href="adminsell.php?id=" + clicked_id;
                         } else{
                             buttonclicked.classList.add("used");
-                            location.href='adminbuy.php?id=' + clicked_id;
+                            fetch('https://andreasb.one/HUST/adminbuy.php?id=' + clicked_id);                            
+                            //window.location.href="adminbuy.php?id=" + clicked_id;
                         }
                     }else{
                         if(buttonclicked.classList.contains("used") == false){
@@ -93,7 +95,7 @@
                             document.getElementById("popupcon").style.height = "100%";
                     
                             
-                            buttonclicked.style.backgroundColor = "rgba(0, 3, 153, 0.7)";
+                            buttonclicked.style.backgroundColor = "var(--usedbutton-colour)";
                             document.getElementById("cellnummber").innerHTML = clicked_id;
 
                         }
@@ -104,6 +106,8 @@
             }
             
             var step = 0;
+
+            //Tldr code 3 1 2 3
             function adminbuttonclick(buttonid){
                 if(buttonid == "admin3"){
                     if(step == 3){
@@ -130,11 +134,18 @@
                     document.getElementById("admin2").style.backgroundColor = "rgb(255,0,0)";
                     document.getElementById("admin1").style.backgroundColor = "rgb(255,0,0)";
                     document.getElementById("admin3").style.backgroundColor = "rgb(255,0,0)";
+                    document.getElementById("admin2").innerHTML = "Admin Mode";
+                    document.getElementById("admin1").innerHTML = "Admin Mode";
+                    document.getElementById("admin3").innerHTML = "Admin Mode";
+                    
                 }else{
                     adminmode = false;
                     document.getElementById("admin2").style.backgroundColor = "transparent";
                     document.getElementById("admin1").style.backgroundColor = "transparent";
                     document.getElementById("admin3").style.backgroundColor = "transparent";
+                    document.getElementById("admin2").innerHTML = "";
+                    document.getElementById("admin1").innerHTML = "";
+                    document.getElementById("admin3").innerHTML = "";
                 }
                 
             }
@@ -151,16 +162,7 @@
     </head>
     <body scroll="no" style="overflow: hidden">
 
-        <!-- Admin panle-->
-        <div id="adminpanle" class="container-fluid">
-            <div id="adminrow" class="row">
-                <button id="admin1" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
-                <button id="admin2" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
-                <button id="admin3" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
-
-            </div>
-
-        </div>
+        
 
         
 
@@ -168,6 +170,15 @@
         <div id="cont" class="container-fluid">
             <div id="titlerow" class="row">
                 <img class="titleimg" src="title.png" alt="Hust: Namnge en soncell. Tryck på en vit solcell för att börja">
+                <!-- Admin panle-->
+                    
+                    <div id="adminrow" class="">
+                        <button id="admin1" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
+                        <button id="admin2" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
+                        <button id="admin3" class="adminbutton" onClick="adminbuttonclick(this.id)" type="button"></button>
+                    </div>
+
+                    
             </div>
 
 

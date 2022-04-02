@@ -27,7 +27,50 @@ html, body {
 
 #titlerow{
     background-color: var(--bg-colour);
+    margin-bottom: 1vh;
+    position: relative;
+
 }
+
+#adminrow{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    
+}
+.adminbutton{
+    
+    position: absolute;
+    height: 10.5vw;
+    background-color: transparent;
+    border: none;
+
+}
+
+#admin1{
+    top: 0px;
+    left: 0px;
+    
+    width: 30vw;
+    
+}
+#admin2{
+    top: 0px;
+    left: 35vw;
+    
+    width: 30vw;
+}
+
+#admin3{
+    top: 0px;
+    right: 0px;
+    width: 30vw;
+}
+
+
+
+
+
 
 
 .titleimg{
@@ -114,7 +157,7 @@ html, body {
     margin: 1px;
     max-height: 2.4vw;
     min-height: 0.1vw;
-    width: 5vw;
+    width: 4vw;
 
 }
 
@@ -205,22 +248,5 @@ html, body {
     font-size: 40px;
 }
 
-.adminbutton{
-    position: fixed;
-    height: 150px;
-    width: 250px;
-    background-color: transparent;
-    border: none;
-}
-
-
-#admin2{
-    left: 380px;
-    
-}
-#admin3{
-    right: 0px;
-    
-}
 
 

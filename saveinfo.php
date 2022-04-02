@@ -15,7 +15,7 @@
     
     
 } else {
-    header("Location: http://www.andreasb.one/index.html");
+    header("Location: http://www.andreasb.one/HUST/index.html");
     exti;
     
 }

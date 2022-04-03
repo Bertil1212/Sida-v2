@@ -16,7 +16,7 @@
     
 } else {
     header("Location: http://www.andreasb.one/HUST/index.html");
-    exti;
+    exit;
     
 }
 

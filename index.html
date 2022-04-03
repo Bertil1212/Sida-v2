@@ -53,7 +53,8 @@
             var selectedcell = 1;
             function accept(){
                 document.getElementById(selectedcell).classList.add("used");
-                location.href='saveinfo.php?id=' + selectedcell;
+                fetch('https://andreasb.one/HUST/saveinfo.php?id=' + selectedcell);
+                
             }
             
 
@@ -82,11 +83,11 @@
                             /*if already sold*/
                             buttonclicked.classList.remove("used");
                             fetch('https://andreasb.one/HUST/adminsell.php?id=' + clicked_id);
-                            //window.location.href="adminsell.php?id=" + clicked_id;
+                            
                         } else{
                             buttonclicked.classList.add("used");
-                            fetch('https://andreasb.one/HUST/adminbuy.php?id=' + clicked_id);                            
-                            //window.location.href="adminbuy.php?id=" + clicked_id;
+                            fetch('https://andreasb.one/HUST/adminbuy.php?id=' + clicked_id);                           
+                            
                         }
                     }else{
                         if(buttonclicked.classList.contains("used") == false){

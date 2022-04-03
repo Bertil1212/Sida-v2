@@ -10,12 +10,12 @@
     file_put_contents( $filename , implode( "\n", $lines ) );
     
     
-    header("Location: http://www.andreasb.one/HUST/index.html");
+    header("Location: http://www.andreasb.one/HUST");
     exit;
     
     
 } else {
-    header("Location: http://www.andreasb.one/HUST/index.html");
+    header("Location: http://www.andreasb.one/HUST");
     exti;
     
 }

@@ -213,8 +213,9 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: steelblue;
+    border-color: rgb(6, 95, 146);
     border-width: 3px;
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.35);
     
 }
 .swishtxt{
@@ -238,6 +239,24 @@ html, body {
     left: 2vw;
     font-size: 10vw;
     font-weight: 500;
+}
+
+#acceptbutton{
+    background-color: white;
+    position: absolute;
+    right: 4vw;
+    bottom: 3vw;
+    width: 12vw;
+    height: 4vw;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 4vw;
+    font-weight: 600;
+    font-size: 2vw;
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.35);
+    border-color: rgb(6, 95, 146);
+    border-width: 10px;
+
 }
 
 

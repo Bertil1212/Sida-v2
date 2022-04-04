@@ -38,7 +38,8 @@
                             document.getElementById(i+1).classList.add("used");
                             document.getElementById(i+1).style.backgroundColor = "var(--usedbutton-colour)";
                         }catch(error){
-                            alert(error+ " " + i);
+                            //Somethimes throws an error, no clue why. But seems to work anyways
+                            alert(error + ". Ingen anning varför det händer. Men sidan funkar endå. Så tryck bara på okej");
                         }
                     }
                 }
@@ -50,7 +51,7 @@
             
             
 
-            var selectedcell = 1;
+            var selectedcell = null;
             function accept(){
                 document.getElementById(selectedcell).classList.add("used");
                 location.href='saveinfo.php?id=' + selectedcell;
@@ -81,11 +82,13 @@
                         if(buttonclicked.classList.contains("used")){
                             /*if already sold*/
                             buttonclicked.classList.remove("used");
-                            fetch('https://andreasb.one/HUST/adminsell.php?id=' + clicked_id);
+                            //https://andreasb.one/HUST/
+                            fetch('adminsell.php?id=' + clicked_id);
                             //window.location.href="adminsell.php?id=" + clicked_id;
                         } else{
                             buttonclicked.classList.add("used");
-                            fetch('https://andreasb.one/HUST/adminbuy.php?id=' + clicked_id);                            
+                            //https://andreasb.one/HUST/
+                            fetch('adminbuy.php?id=' + clicked_id);                            
                             //window.location.href="adminbuy.php?id=" + clicked_id;
                         }
                     }else{
@@ -183,10 +186,23 @@
 
 
             <div id="bodyrow" class="row">
-                
                 <div class="imgwrap">
                     
                     <img id="carimg" src="carimgnum.png" alt="Image not found">
+                    <!-- Swish popup-->
+                    <div id="popupcon">
+                        <div class="popup">
+                            <button class="backbutton" onClick="backclick()" type="button">
+                                <img src="/backbutton.png" alt="" style="width: 80%;">
+                            </button>
+
+                            <div class="swishtxt">Swisha 250kr till: 1232-18 93 22<br>Tryck sedan vidare</div>
+                            <img id="qr" src="/swish.png" alt="">
+                            <div id="cellnummber">ERROR</div>
+
+                        </div>
+            
+                    </div>
 
                     <!--All the fucking solar cell buttons-->
         <div class="buttonwrap">
@@ -512,10 +528,19 @@
             <div id="bottomrow" class=""></div>
         </div>
 
-        <!-- Swish popup-->
-        <div id="popupcon" class="container-fluid" >
-            <div id="popuprow" class="row d-flex justify-content-center">
-                <div id="popupcol" class="col  d-flex justify-content-center">
+
+
+        
+
+
+
+
+
+<!--
+    Old swish popup
+        <div id="popupcon" class="" >
+            <div id="popuprow" class="">
+                <div id="popupcol" class="">
                     <div id="swishl" class="">
                         <button id="backbutton" onClick="backclick()" type="button">
                             <img src="backbutton.png" alt="" style="width: 100%;">
@@ -533,8 +558,7 @@
                 </div>
             </div>
         </div>
-
-        
+    -->
         
 
         

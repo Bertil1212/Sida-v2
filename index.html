@@ -133,13 +133,14 @@
                 }
                 
                 if(step == 4){
+                    step == 0;
                     adminmode = true;
                     document.getElementById("admin2").style.backgroundColor = "rgb(255,0,0)";
                     document.getElementById("admin1").style.backgroundColor = "rgb(255,0,0)";
                     document.getElementById("admin3").style.backgroundColor = "rgb(255,0,0)";
-                    document.getElementById("admin2").innerHTML = "Admin Mode <br>Set pris <br> 250kr";
-                    document.getElementById("admin1").innerHTML = "Admin Mode <br>Set pris <br> 100kr";
-                    document.getElementById("admin3").innerHTML = "Admin Mode <br>Set pris <br> 500kr";
+                    document.getElementById("admin2").innerHTML = "Admin Mode";
+                    document.getElementById("admin1").innerHTML = "Admin Mode";
+                    document.getElementById("admin3").innerHTML = "Admin Mode";
                     
                 }else{
                     adminmode = false;
@@ -197,7 +198,7 @@
                             </button>
 
                             <div class="swishtxt">Swisha 250kr till: 1232-18 93 22<br>Tryck sedan vidare</div>
-                            <img id="qr" src="swish.png" alt="">
+                            <img id="qr" src="qr250.png" alt="">
                             <div id="cellnummber">ERROR</div>
                             <div id="acceptbutton" onclick="accept()" type="button">Vidare</div>
 

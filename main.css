@@ -199,14 +199,14 @@ html, body {
     box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
     border-color: steelblue;
     border-style: solid;
-    border-radius: 50px;
-    border-width: 6px;
+    border-radius: 30px;
+    border-width: 0.4vw;
     position: relative;
 }
 .backbutton{
     position:absolute;
-    width: 6vw;
-    height: 6vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 100%;
     top: 10px;
     left: 10px;
@@ -219,11 +219,11 @@ html, body {
     
 }
 .swishtxt{
-    padding-top: 1vw;
+    padding-top: 7vw;
     margin-right: 12vw;
     text-align: center;
     font-size: 2.2vw;
-    color: white
+    color: whitesmoke;
 
 }
 
@@ -237,14 +237,15 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 2vw;
-    font-size: 10vw;
+    font-size: 9vw;
     font-weight: 500;
+    color: whitesmoke;
 }
 
 #acceptbutton{
     background-color: white;
     position: absolute;
-    right: 4vw;
+    right: 4.25vw;
     bottom: 3vw;
     width: 12vw;
     height: 4vw;
